@@ -1,0 +1,20 @@
+.form-main {
+  border-radius: 8px;
+  text-align: right;
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin: 40px;
+}
+
+label {
+  font-size: 24px;
+}
+input {
+  height: 24px;
+}
+
+.error-msg {
+  font-size: 13px;
+  color: red;
+  margin: 0;
+}
