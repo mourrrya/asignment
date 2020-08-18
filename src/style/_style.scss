@@ -1,2 +1,7 @@
-@import "./result";
-@import "./admissionForm";
+@import "./dashboard";
+@import "./signUpForm";
+.error-msg {
+  font-size: 13px;
+  color: red;
+  margin: 0;
+}
