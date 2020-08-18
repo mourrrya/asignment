@@ -67,6 +67,9 @@ export default function Result() {
         <h2 className="user-card__email">Email : {signUpState.email}</h2>
         <h2 className="user-card__city">City : {signUpState.city}</h2>
       </div>
+      <h1 style={{ textAlign: "center" }}>
+        Population of Male, Female and Total
+      </h1>
       <div style={{ height: "600px" }} className="">
         <ResponsivePie
           data={getFilteredPopulation()}
