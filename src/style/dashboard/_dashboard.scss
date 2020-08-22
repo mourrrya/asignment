@@ -1,0 +1,57 @@
+@import "./hero";
+@import "./productRange";
+@import "./productBS";
+@import "./productFeatured";
+@import "./testimonial";
+@import "./blog";
+@import "./whyUs";
+@import "./footer";
+
+%head {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #666666;
+}
+.star {
+  display: flex;
+  img {
+    margin-right: 4px;
+  }
+}
+
+// .dashboard-main {
+//   background: #dcdad7;
+// }
+
+.brand-strip {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #4e6cb8;
+  padding: 8px 0;
+  .brand-strip-sub-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    .brand-strip-content {
+      display: flex;
+      align-items: center;
+      margin: 20px;
+      &__img {
+        margin-right: 12px;
+      }
+      &__span {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #ffffff;
+      }
+    }
+  }
+}

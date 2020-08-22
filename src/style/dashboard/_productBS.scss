@@ -1,0 +1,117 @@
+.product-BS {
+  padding: 80px;
+  background: #f1f1f1;
+  &__head {
+    @extend%head;
+  }
+  @media (max-width: 540px) {
+    padding: 40px;
+  }
+}
+
+.product-card {
+  max-width: 380px;
+  margin: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  .product-card-img {
+    width: 100%;
+    position: relative;
+    img {
+      width: 100%;
+    }
+    span {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 12px;
+
+      background: #f4978e;
+      border-radius: 0px 5px;
+      top: 0;
+      right: 0;
+
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+    }
+  }
+  .product-card-content {
+    margin: 20px;
+    &__title {
+      margin-bottom: 4px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    &__ratting {
+      display: flex;
+      align-items: center;
+
+      .review {
+        margin-left: 12px;
+        span {
+        }
+      }
+    }
+
+    &__price {
+      margin-top: 4px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+
+  .product-card-action {
+    position: relative;
+    display: flex;
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+
+    .add-to-wishlist {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      padding-right: 20px;
+      img {
+        margin-right: 4px;
+      }
+      span {
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+
+    .add-to-cart {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      padding-left: 20px;
+      img {
+        margin-right: 4px;
+      }
+
+      span {
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+    &:after {
+      content: "";
+      z-index: 2;
+      position: absolute;
+      right: 50%;
+      bottom: 16%;
+      height: 40px;
+      width: 1px;
+      background: #999;
+    }
+  }
+}

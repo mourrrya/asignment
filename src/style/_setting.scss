@@ -1,0 +1,19 @@
+.react-multiple-carousel__arrow--right,
+.react-multiple-carousel__arrow--left {
+  z-index: 2;
+}
+.react-multi-carousel-dot-list {
+  display: flex;
+  flex-direction: column;
+  bottom: 24px;
+  left: 32px;
+}
+.custom-dot {
+  margin-bottom: 12px;
+  cursor: pointer;
+  width: 15.5px;
+  height: 15.5px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
