@@ -1,10 +1,10 @@
 import React from "react";
-import comfyMattressImg from "../../assets/img/productRange/comfyMattressImg.png";
-import duraMattressImg from "../../assets/img/productRange/duraMattressImg.png";
-import flexiMattressImg from "../../assets/img/productRange/flexiMattressImg.png";
-import pillowImg from "../../assets/img/productRange/pillowImg.png";
-import satinSheetsImg from "../../assets/img/productRange/satinSheetsImg.png";
-import arrowRight from "../../assets/svg/arrowRight.svg";
+import comfyMattressImg from "../../../assets/img/productRange/comfyMattressImg.png";
+import duraMattressImg from "../../../assets/img/productRange/duraMattressImg.png";
+import flexiMattressImg from "../../../assets/img/productRange/flexiMattressImg.png";
+import pillowImg from "../../../assets/img/productRange/pillowImg.png";
+import satinSheetsImg from "../../../assets/img/productRange/satinSheetsImg.png";
+import arrowRight from "../../../assets/svg/arrowRight.svg";
 export const ProductRange = () => {
   const Product = ({ img, title, subTitle, styleCtm }) => (
     <div style={styleCtm} className="product-content">

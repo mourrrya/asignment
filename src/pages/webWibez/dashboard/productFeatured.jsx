@@ -1,9 +1,9 @@
 import React from "react";
-import bedSheetImg from "../../assets/img/productFeatured/bedSheetImg.png";
-import duraMattressesImg from "../../assets/img/productFeatured/duraMattressImg.png";
-import flexiMattress from "../../assets/img/productFeatured/flexiMattress.png";
-import pillowsImg from "../../assets/img/productFeatured/pillowsImg.png";
-import arrowRight from "../../assets/svg/arrowRight.svg";
+import bedSheetImg from "../../../assets/img/productFeatured/bedSheetImg.png";
+import duraMattressesImg from "../../../assets/img/productFeatured/duraMattressImg.png";
+import flexiMattress from "../../../assets/img/productFeatured/flexiMattress.png";
+import pillowsImg from "../../../assets/img/productFeatured/pillowsImg.png";
+import arrowRight from "../../../assets/svg/arrowRight.svg";
 
 const productFeatured = [
   { img: duraMattressesImg, title: "Dura Mattress" },

@@ -1,11 +1,11 @@
 import Carousel from "react-multi-carousel";
 import React from "react";
-import tmOneImg from "../../assets/img/testimonial/tmOneImg.png";
-import tmThreeImg from "../../assets/img/testimonial/tmThreeImg.png";
-import tmTwoImg from "../../assets/img/testimonial/tmTwoImg.png";
-import arrowCircleLeft from "../../assets/svg/arrowCircleLeft.svg";
-import arrowCircleRight from "../../assets/svg/arrowCircleRight.svg";
-import star from "../../assets/svg/star.svg";
+import tmOneImg from "../../../assets/img/testimonial/tmOneImg.png";
+import tmThreeImg from "../../../assets/img/testimonial/tmThreeImg.png";
+import tmTwoImg from "../../../assets/img/testimonial/tmTwoImg.png";
+import arrowCircleLeft from "../../../assets/svg/arrowCircleLeft.svg";
+import arrowCircleRight from "../../../assets/svg/arrowCircleRight.svg";
+import star from "../../../assets/svg/star.svg";
 import "@brainhubeu/react-carousel/lib/style.css";
 
 const productTestimonial = [

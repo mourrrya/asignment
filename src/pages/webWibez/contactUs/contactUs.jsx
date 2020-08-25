@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import userImg from "../../assets/img/contactUs/userImg.svg";
+import userImg from "../../../assets/img/contactUs/userImg.svg";
 import { GetUserDetailForm } from "./fillDetail";
 
 const contactUsData = [

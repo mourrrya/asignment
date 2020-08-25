@@ -1,9 +1,9 @@
 import { Button } from "antd";
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import businessImg from "../../assets/img/aboutUs/businessImg.svg";
-import gigWorkerImg from "../../assets/img/aboutUs/gigWorkerImg.svg";
-import youngWorker from "../../assets/img/aboutUs/youngWorker.svg";
+import businessImg from "../../../assets/img/aboutUs/businessImg.svg";
+import gigWorkerImg from "../../../assets/img/aboutUs/gigWorkerImg.svg";
+import youngWorker from "../../../assets/img/aboutUs/youngWorker.svg";
 // import rightArrowIconLight from "../../assets/img/rightArrowIconLight.svg";
 
 const about = [
@@ -49,9 +49,7 @@ export default function AboutUs() {
             <p className="aboutUs-paraOne">{data.paraOne}</p>
             <p className="aboutUs-paraTwo">{data.paraTwo} </p>
             {data.button && (
-              <Button className="aboutUsButton">
-                {data.button}
-              </Button>
+              <Button className="aboutUsButton">{data.button}</Button>
             )}
             <div className="aboutUs-img-block">
               <img src={data.img} alt="" className="aboutUs-img" />

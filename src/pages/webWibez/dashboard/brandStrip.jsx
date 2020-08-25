@@ -1,7 +1,7 @@
 import React from "react";
-import experience from "../../assets/svg/experience.svg";
-import quality from "../../assets/svg/quality.svg";
-import trust from "../../assets/svg/trust.svg";
+import experience from "../../../assets/svg/experience.svg";
+import quality from "../../../assets/svg/quality.svg";
+import trust from "../../../assets/svg/trust.svg";
 const brandStrip = [
   { img: quality, text: "Best Quality" },
   { img: trust, text: "Most Trusted" },

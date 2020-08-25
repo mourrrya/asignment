@@ -1,13 +1,13 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 
-import mattressOne from "../../assets/img/productBS/mattressOne.png";
-import mattressThree from "../../assets/img/productBS/mattressThree.png";
-import mattressTwo from "../../assets/img/productBS/mattressTwo.png";
+import mattressOne from "../../../assets/img/productBS/mattressOne.png";
+import mattressThree from "../../../assets/img/productBS/mattressThree.png";
+import mattressTwo from "../../../assets/img/productBS/mattressTwo.png";
 
-import cart from "../../assets/svg/cart.svg";
-import plus from "../../assets/svg/plus.svg";
-import star from "../../assets/svg/star.svg";
+import cart from "../../../assets/svg/cart.svg";
+import plus from "../../../assets/svg/plus.svg";
+import star from "../../../assets/svg/star.svg";
 
 const myProductCard = [
   { img: mattressOne, title: "Fluid Magic Mattress", discount: "32%" },

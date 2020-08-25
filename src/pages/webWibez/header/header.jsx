@@ -6,7 +6,7 @@ const Menu = () => {
   const history = useHistory();
   return (
     <div className="menu">
-      <div className="menu__link" onClick={() => history.push("/")}>
+      <div className="menu__link" onClick={() => history.push("/dashboard")}>
         <span>Home</span>
       </div>
       <div className="menu__link" onClick={() => history.push("/about")}>

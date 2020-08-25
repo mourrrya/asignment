@@ -6,9 +6,7 @@ import { ProductFeatured } from "./productFeatured";
 import { ProductRange } from "./productRange";
 import { Testimonial } from "./testimonial";
 import { WhyUs } from "./whyUs";
-import { Footer } from "./footer";
 import { Hero } from "./hero";
-import Header from "../header/header";
 
 export default function Dashboard() {
   return (

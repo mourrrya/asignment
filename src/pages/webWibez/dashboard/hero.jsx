@@ -1,8 +1,8 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
-import hero from "../../assets/img/hero1.png";
-import heroFocusPoint from "../../assets/svg/heroFocusPoint.svg";
-import arrowWhiteRight from "../../assets/svg/arrowWhiteRight.svg";
+import hero from "../../../assets/img/hero1.png";
+import heroFocusPoint from "../../../assets/svg/heroFocusPoint.svg";
+import arrowWhiteRight from "../../../assets/svg/arrowWhiteRight.svg";
 
 const CustomCarousel = (props) => {
   const { active, onClick } = props;

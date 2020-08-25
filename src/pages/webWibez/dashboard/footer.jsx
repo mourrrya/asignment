@@ -1,5 +1,5 @@
 import React from "react";
-import arrowRight from "../../assets/svg/arrowRight.svg";
+import arrowRight from "../../../assets/svg/arrowRight.svg";
 
 const searchOption = ["Flexible", "Mattress", "Pillows", "Bed Sheets"];
 

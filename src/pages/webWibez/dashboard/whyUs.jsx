@@ -1,7 +1,7 @@
 import React from "react";
-import whyUsImg from "../../assets/img/whyUsImg.png";
-import bed from "../../assets/svg/bed.svg";
-import symbol from "../../assets/svg/symbol.svg";
+import whyUsImg from "../../../assets/img/whyUsImg.png";
+import bed from "../../../assets/svg/bed.svg";
+import symbol from "../../../assets/svg/symbol.svg";
 
 export const WhyUs = () => (
     <div className="why-us-main">
