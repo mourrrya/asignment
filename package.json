@@ -18,7 +18,8 @@
     "react-multi-carousel": "^2.5.5",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
-    "sass": "^1.26.10"
+    "sass": "^1.26.10",
+    "serve": "^11.3.2"
   },
   "scripts": {
     "start": "serve -s build",
