@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Input, Button } from "antd";
+import { Input, Button, message } from "antd";
 import { useHistory } from "react-router-dom";
 export default function AcornLogin() {
   const pin = "3321";
@@ -12,12 +12,14 @@ export default function AcornLogin() {
       history.push("/acorn/dashboard");
       sessionStorage.setItem("acornPin", password);
       setPassword("");
+    } else {
+      message.info("The pin is hint provided below text box");
     }
   };
 
   const handleChange = (e) => {
     const getValue = e.target.value;
-    if (getValue.match(/^[0-9]*$/) && password.length < 4) {
+    if (getValue.match(/^[0-9]*$/) && getValue.length <= 4) {
       setPassword(e.target.value);
       console.log(getValue);
     }
