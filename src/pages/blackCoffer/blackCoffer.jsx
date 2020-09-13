@@ -1,16 +1,16 @@
 import React from "react";
 
 import { Radar } from "react-chartjs-2";
-import bcData from "../../blackCofferData.json";
+// import bcData from "../../blackCofferData.json";
 
 export default function BlackCoffer() {
   let regionSA = [];
-  bcData.forEach((data) => {
-    if (data.region.toLowerCase() === "south america") {
-      console.log(data.region.toLowerCase());
-      regionSA = [...regionSA, data];
-    }
-  });
+  // bcData.forEach((data) => {
+  //   if (data.region.toLowerCase() === "south america") {
+  //     console.log(data.region.toLowerCase());
+  //     regionSA = [...regionSA, data];
+  //   }
+  // });
   let sum = 0;
   for (let i = 0; i < regionSA.length; i++) {
     const intensity = regionSA[i].intensity;
