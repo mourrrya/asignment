@@ -4,21 +4,21 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 28px;
+  font-size: 16px;
   background: #dcdad7;
   background-image: radial-gradient(rgba(255, 100, 100, 0.5), transparent 50%);
   &__link {
     cursor: pointer;
-    margin: 20px;
+    margin: 10px;
     color: #fff;
-    padding: 10px 20px;
+    padding: 4px 8px;
     border-radius: 4px;
     background: #4e6cb8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
     &:hover {
       box-shadow: initial;
-      color: #E7B7B5;
+      color: #e7b7b5;
     }
   }
 }

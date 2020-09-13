@@ -1,0 +1,43 @@
+.empass-main {
+  background: #dcdad7;
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  select {
+    height: 26px;
+    margin-bottom: 30px;
+  }
+  h5 {
+    margin: 0;
+  }
+  input {
+    margin: 20px 10px 20px 0;
+  }
+  button {
+    margin: 20px 10px 20px 0;
+  }
+}
+
+.uploaded-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-position {
+  width: 200px;
+  height: 150px;
+  position: relative;
+  .recorded-video {
+    position: absolute;
+  }
+  .preview-video {
+    position: absolute;
+  }
+}
+.btn {
+  position: relative;
+  top: 140px;
+}

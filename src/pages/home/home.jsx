@@ -13,6 +13,9 @@ export default function Home() {
       <Link to="/acorn/login" className="home-main__link">
         Acorn Assignment
       </Link>
+      <Link to="/empass_first_step" className="home-main__link">
+        Empass Assignment
+      </Link>
     </div>
   );
 }

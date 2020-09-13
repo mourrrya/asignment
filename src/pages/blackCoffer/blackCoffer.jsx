@@ -1,293 +1,119 @@
 import React from "react";
-import { ResponsiveHeatMap } from "@nivo/heatmap";
 
-const data = [
-  {
-    country: "AD",
-    "hot dog": 6,
-    "hot dogColor": "hsl(25, 70%, 50%)",
-    burger: 65,
-    burgerColor: "hsl(227, 70%, 50%)",
-    sandwich: 31,
-    sandwichColor: "hsl(299, 70%, 50%)",
-    kebab: 97,
-    kebabColor: "hsl(305, 70%, 50%)",
-    fries: 83,
-    friesColor: "hsl(20, 70%, 50%)",
-    donut: 57,
-    donutColor: "hsl(144, 70%, 50%)",
-    junk: 27,
-    junkColor: "hsl(67, 70%, 50%)",
-    sushi: 63,
-    sushiColor: "hsl(332, 70%, 50%)",
-    ramen: 22,
-    ramenColor: "hsl(252, 70%, 50%)",
-    curry: 25,
-    curryColor: "hsl(207, 70%, 50%)",
-    udon: 1,
-    udonColor: "hsl(203, 70%, 50%)",
-  },
-  {
-    country: "AE",
-    "hot dog": 22,
-    "hot dogColor": "hsl(250, 70%, 50%)",
-    burger: 23,
-    burgerColor: "hsl(202, 70%, 50%)",
-    sandwich: 65,
-    sandwichColor: "hsl(154, 70%, 50%)",
-    kebab: 6,
-    kebabColor: "hsl(300, 70%, 50%)",
-    fries: 75,
-    friesColor: "hsl(340, 70%, 50%)",
-    donut: 37,
-    donutColor: "hsl(43, 70%, 50%)",
-    junk: 72,
-    junkColor: "hsl(4, 70%, 50%)",
-    sushi: 65,
-    sushiColor: "hsl(14, 70%, 50%)",
-    ramen: 13,
-    ramenColor: "hsl(284, 70%, 50%)",
-    curry: 44,
-    curryColor: "hsl(55, 70%, 50%)",
-    udon: 23,
-    udonColor: "hsl(11, 70%, 50%)",
-  },
-  {
-    country: "AF",
-    "hot dog": 22,
-    "hot dogColor": "hsl(32, 70%, 50%)",
-    burger: 44,
-    burgerColor: "hsl(12, 70%, 50%)",
-    sandwich: 82,
-    sandwichColor: "hsl(18, 70%, 50%)",
-    kebab: 68,
-    kebabColor: "hsl(112, 70%, 50%)",
-    fries: 38,
-    friesColor: "hsl(225, 70%, 50%)",
-    donut: 91,
-    donutColor: "hsl(59, 70%, 50%)",
-    junk: 96,
-    junkColor: "hsl(25, 70%, 50%)",
-    sushi: 95,
-    sushiColor: "hsl(161, 70%, 50%)",
-    ramen: 54,
-    ramenColor: "hsl(204, 70%, 50%)",
-    curry: 4,
-    curryColor: "hsl(357, 70%, 50%)",
-    udon: 73,
-    udonColor: "hsl(34, 70%, 50%)",
-  },
-  {
-    country: "AG",
-    "hot dog": 48,
-    "hot dogColor": "hsl(270, 70%, 50%)",
-    burger: 43,
-    burgerColor: "hsl(216, 70%, 50%)",
-    sandwich: 31,
-    sandwichColor: "hsl(342, 70%, 50%)",
-    kebab: 38,
-    kebabColor: "hsl(79, 70%, 50%)",
-    fries: 12,
-    friesColor: "hsl(237, 70%, 50%)",
-    donut: 9,
-    donutColor: "hsl(57, 70%, 50%)",
-    junk: 94,
-    junkColor: "hsl(179, 70%, 50%)",
-    sushi: 74,
-    sushiColor: "hsl(354, 70%, 50%)",
-    ramen: 64,
-    ramenColor: "hsl(306, 70%, 50%)",
-    curry: 36,
-    curryColor: "hsl(5, 70%, 50%)",
-    udon: 42,
-    udonColor: "hsl(29, 70%, 50%)",
-  },
-  {
-    country: "AI",
-    "hot dog": 52,
-    "hot dogColor": "hsl(267, 70%, 50%)",
-    burger: 15,
-    burgerColor: "hsl(22, 70%, 50%)",
-    sandwich: 37,
-    sandwichColor: "hsl(194, 70%, 50%)",
-    kebab: 29,
-    kebabColor: "hsl(209, 70%, 50%)",
-    fries: 95,
-    friesColor: "hsl(286, 70%, 50%)",
-    donut: 97,
-    donutColor: "hsl(101, 70%, 50%)",
-    junk: 28,
-    junkColor: "hsl(45, 70%, 50%)",
-    sushi: 30,
-    sushiColor: "hsl(221, 70%, 50%)",
-    ramen: 70,
-    ramenColor: "hsl(27, 70%, 50%)",
-    curry: 4,
-    curryColor: "hsl(174, 70%, 50%)",
-    udon: 93,
-    udonColor: "hsl(324, 70%, 50%)",
-  },
-  {
-    country: "AL",
-    "hot dog": 93,
-    "hot dogColor": "hsl(97, 70%, 50%)",
-    burger: 98,
-    burgerColor: "hsl(67, 70%, 50%)",
-    sandwich: 7,
-    sandwichColor: "hsl(214, 70%, 50%)",
-    kebab: 65,
-    kebabColor: "hsl(283, 70%, 50%)",
-    fries: 94,
-    friesColor: "hsl(312, 70%, 50%)",
-    donut: 49,
-    donutColor: "hsl(120, 70%, 50%)",
-    junk: 41,
-    junkColor: "hsl(184, 70%, 50%)",
-    sushi: 49,
-    sushiColor: "hsl(59, 70%, 50%)",
-    ramen: 24,
-    ramenColor: "hsl(48, 70%, 50%)",
-    curry: 83,
-    curryColor: "hsl(129, 70%, 50%)",
-    udon: 51,
-    udonColor: "hsl(115, 70%, 50%)",
-  },
-  {
-    country: "AM",
-    "hot dog": 55,
-    "hot dogColor": "hsl(286, 70%, 50%)",
-    burger: 51,
-    burgerColor: "hsl(196, 70%, 50%)",
-    sandwich: 67,
-    sandwichColor: "hsl(318, 70%, 50%)",
-    kebab: 39,
-    kebabColor: "hsl(13, 70%, 50%)",
-    fries: 7,
-    friesColor: "hsl(165, 70%, 50%)",
-    donut: 63,
-    donutColor: "hsl(135, 70%, 50%)",
-    junk: 3,
-    junkColor: "hsl(267, 70%, 50%)",
-    sushi: 9,
-    sushiColor: "hsl(173, 70%, 50%)",
-    ramen: 82,
-    ramenColor: "hsl(159, 70%, 50%)",
-    curry: 36,
-    curryColor: "hsl(21, 70%, 50%)",
-    udon: 67,
-    udonColor: "hsl(89, 70%, 50%)",
-  },
-  {
-    country: "AO",
-    "hot dog": 24,
-    "hot dogColor": "hsl(119, 70%, 50%)",
-    burger: 100,
-    burgerColor: "hsl(114, 70%, 50%)",
-    sandwich: 0,
-    sandwichColor: "hsl(244, 70%, 50%)",
-    kebab: 100,
-    kebabColor: "hsl(224, 70%, 50%)",
-    fries: 49,
-    friesColor: "hsl(316, 70%, 50%)",
-    donut: 38,
-    donutColor: "hsl(217, 70%, 50%)",
-    junk: 11,
-    junkColor: "hsl(200, 70%, 50%)",
-    sushi: 50,
-    sushiColor: "hsl(340, 70%, 50%)",
-    ramen: 21,
-    ramenColor: "hsl(189, 70%, 50%)",
-    curry: 66,
-    curryColor: "hsl(198, 70%, 50%)",
-    udon: 4,
-    udonColor: "hsl(246, 70%, 50%)",
-  },
-  {
-    country: "AQ",
-    "hot dog": 57,
-    "hot dogColor": "hsl(340, 70%, 50%)",
-    burger: 83,
-    burgerColor: "hsl(87, 70%, 50%)",
-    sandwich: 11,
-    sandwichColor: "hsl(22, 70%, 50%)",
-    kebab: 28,
-    kebabColor: "hsl(19, 70%, 50%)",
-    fries: 23,
-    friesColor: "hsl(16, 70%, 50%)",
-    donut: 74,
-    donutColor: "hsl(275, 70%, 50%)",
-    junk: 37,
-    junkColor: "hsl(106, 70%, 50%)",
-    sushi: 73,
-    sushiColor: "hsl(184, 70%, 50%)",
-    ramen: 41,
-    ramenColor: "hsl(27, 70%, 50%)",
-    curry: 28,
-    curryColor: "hsl(5, 70%, 50%)",
-    udon: 31,
-    udonColor: "hsl(268, 70%, 50%)",
-  },
-];
+import { Radar } from "react-chartjs-2";
+import bcData from "../../blackCofferData.json";
 
 export default function BlackCoffer() {
+  let regionSA = [];
+  bcData.forEach((data) => {
+    if (data.region.toLowerCase() === "south america") {
+      console.log(data.region.toLowerCase());
+      regionSA = [...regionSA, data];
+    }
+  });
+  let sum = 0;
+  for (let i = 0; i < regionSA.length; i++) {
+    const intensity = regionSA[i].intensity;
+    console.log(intensity);
+    if (!!intensity) {
+      sum = parseInt(intensity) + parseInt(sum);
+    }
+  }
+  const randomScalingFactor = () => {
+    return Math.round(Math.random() * 100);
+  };
+
+  const data = {
+    labels: [
+      "Eating",
+      "Drinking",
+      "Sleeping",
+      "Designing",
+      "Coding",
+      "Cycling",
+      "Running",
+    ],
+    datasets: [
+      {
+        label: "My First dataset",
+        backgroundColor: "rgba(220,220,220,0.2)",
+        pointBackgroundColor: "rgba(220,220,220,1)",
+        data: [
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+        ],
+        metadata: [1, 2, 3, 4, 5, 6, 7],
+      },
+      {
+        label: "Hidden dataset",
+        hidden: true,
+        data: [
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+        ],
+      },
+      {
+        label: "My Second dataset",
+        backgroundColor: "rgba(151,187,205,0.2)",
+        pointBackgroundColor: "rgba(151,187,205,1)",
+        hoverPointBackgroundColor: "#fff",
+        pointHighlightStroke: "rgba(151,187,205,1)",
+        data: [
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+        ],
+      },
+    ],
+  };
+  const options = {
+    legend: {
+      position: "top",
+    },
+    title: {
+      display: true,
+      text: "Chart.js Radar Chart",
+    },
+    scale: {
+      reverse: false,
+      gridLines: {
+        color: [
+          "black",
+          "red",
+          "orange",
+          "yellow",
+          "green",
+          "blue",
+          "indigo",
+          "violet",
+        ],
+      },
+      ticks: {
+        beginAtZero: true,
+      },
+    },
+  };
   return (
-    <ResponsiveHeatMap
-      data={data}
-      keys={[
-        "hot dog",
-        "burger",
-        "sandwich",
-        "kebab",
-        "fries",
-        "donut",
-        "junk",
-        "sushi",
-        "ramen",
-        "curry",
-        "udon",
-      ]}
-      indexBy="country"
-      margin={{ top: 100, right: 60, bottom: 60, left: 60 }}
-      forceSquare={true}
-      axisTop={{
-        orient: "top",
-        tickSize: 5,
-        tickPadding: 5,
-        tickRotation: -90,
-        legend: "",
-        legendOffset: 36,
-      }}
-      axisRight={null}
-      axisBottom={null}
-      axisLeft={{
-        orient: "left",
-        tickSize: 5,
-        tickPadding: 5,
-        tickRotation: 0,
-        legend: "country",
-        legendPosition: "middle",
-        legendOffset: -40,
-      }}
-      cellOpacity={1}
-      cellBorderColor={{ from: "color", modifiers: [["darker", 0.4]] }}
-      labelTextColor={{ from: "color", modifiers: [["darker", 1.8]] }}
-      defs={[
-        {
-          id: "lines",
-          type: "patternLines",
-          background: "inherit",
-          color: "rgba(0, 0, 0, 0.1)",
-          rotation: -45,
-          lineWidth: 4,
-          spacing: 7,
-        },
-      ]}
-      fill={[{ id: "lines" }]}
-      animate={true}
-      motionStiffness={80}
-      motionDamping={9}
-      hoverTarget="cell"
-      cellHoverOthersOpacity={0.25}
-    />
+    <div className="">
+      <Radar
+        data={data}
+        options={options}
+        onElementsClick={(elem) => console.log(elem)}
+      />
+    </div>
   );
 }
